@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TradeMySkill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="TradeMySkill Logo" class="logo">
+
+    <h1>Welcome to TradeMySkill</h1>
+    <p class="tagline">Share to grow. Learn to glow.</p>
+
+    <p class="intro">
+      🚀 Welcome to a community where <strong>everyone has something to teach</strong>, and <strong>everyone deserves to learn</strong>.<br>
+      At TradeMySkill, we believe knowledge is currency. So why not trade it?
+    </p>
+
+    <p class="start">
+      🎯 Whether you're good at coding, art, math, design, singing, or even yoga — someone out there needs you.<br>
+      And guess what? They may have the exact skill you're looking for.
+    </p>
+
+    <form id="skillForm">
+      <h2>Offer & Request a Skill</h2>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <select id="offer" required>
+        <option value="">Select a skill to offer</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Math Tutoring">Math Tutoring</option>
+        <option value="Design">Design</option>
+        <option value="Cooking">Cooking</option>
+        <option value="Dance">Dance</option>
+        <option value="Singing">Singing</option>
+        <option value="Yoga">Yoga</option>
+        <option value="Drawing">Drawing</option>
+        <option value="UI/UX">UI/UX</option>
+      </select>
+
+      <input type="text" id="want" placeholder="Skill You Want" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="feedback"></div>
+
+    <h3>Skill Exchange Board</h3>
+    <table id="skillTable">
+      <tr>
+        <th>Name</th>
+        <th>Offers</th>
+        <th>Wants</th>
+      </tr>
+    </table>
+
+    <div class="why-section">
+      <h2>Why Trade Skills?</h2>
+      <ul>
+        <li>✅ Learn faster with 1-on-1 help</li>
+        <li>✅ Build confidence by teaching others</li>
+        <li>✅ Save money — no paid courses!</li>
+        <li>✅ Meet people with similar passions</li>
+        <li>✅ Create a network of smart learners</li>
+      </ul>
+    </div>
+
+    <div class="responses">
+      <h2>What Our Users Say</h2>
+      <p><em>"I taught Python to someone, and they helped me with UI/UX! Best exchange ever!"</em> – Riya</p>
+      <p><em>"TradeMySkill helped me find a math tutor when I was struggling with exams."</em> – Aarav</p>
+    </div>
+
+    <footer>
+      <p>💬 Thank you for visiting! Hope you find your perfect skill match.</p>
+      <p style="font-size: 13px;">Made with 💜 by Divija for Chainlink Hackathon</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
